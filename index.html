@@ -27,15 +27,6 @@
         margin-bottom: 200px;
       }
 
-      @media only screen 
-      and (min-width: 800px)  {
-
-          body {
-              font-size: 20px;
-          }
-
-      }
-
       b {
         font-weight: 700;
       }
@@ -81,12 +72,12 @@
       }
 
       .topbuffer {
-        margin-top: 100px;
+        margin-top: 150px;
       }
 
       #titlediv {
         margin-top: 100px;
-        font-size: 5em;
+        font-size: 4.5em;
         font-weight: 400;
         line-height: 1.0;
         letter-spacing: -0.025em;
@@ -98,15 +89,14 @@
 
       span.big {
         font-weight: 700;
-        font-size: 1.3em;
+        font-size: 1.5em;
       }
 
       #videodiv { 
         position: relative; 
-        padding-bottom: 40%; 
+        padding-bottom: 56.25%; 
         height: 0; 
         overflow: hidden; 
-        width: 100%; 
         height: auto; 
       } 
         
@@ -121,11 +111,23 @@
       }
 
       .strongtext {
-        margin-top: 100px;
         font-size: 3.5em;
         font-weight: 400;
         line-height: 1.0;
         letter-spacing: -0.025em;
+      }
+
+      @media only screen 
+      and (min-width: 1000px)  {
+
+          body {
+              font-size: 20px;
+          }
+
+          #videodiv { 
+            padding-bottom: 562.5px;
+          } 
+
       }
 
 
@@ -139,7 +141,7 @@
 
       <div id="titlediv" class="full">
         <p><span class="big">HOT SWAP</span></p>
-        <p>is a series of digital games with <span class="colored">reconfigurable physical controllers</span>.</p>
+        <p>is a series of<br>digital games with<br><span class="colored">reconfigurable physical controllers.</span></p>
       </div>
 
       <div id="videodiv" class="full topbuffer">
@@ -148,6 +150,7 @@
 
       <a href="https://www.gdconf.com/alt.ctrl.gdc" target="_blank" class="full">
         <div id="" class="strongtext full topbuffer">
+            <p>March 18&ndash;22</p>
           <p><b>alt.ctrl.GDC 2019 &swarr;</b></p>
           <p>Expo Hall XXX</p>
         </div>
