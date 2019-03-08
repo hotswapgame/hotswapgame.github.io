@@ -50,6 +50,7 @@
         color: white;
         margin: 0;
         padding: 0;
+        text-decoration: none;
       }
 
       a:hover {
@@ -61,6 +62,17 @@
       }
 
       .full {
+        position: relative;
+        float: left;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 90%;
+        flex-wrap: wrap;
+        width: 90%;
+        max-width: 1000px;
+      }
+
+      .half {
         position: relative;
         float: left;
         flex-grow: 0;
@@ -117,6 +129,13 @@
         letter-spacing: -0.025em;
       }
 
+      .halftext {
+        font-size: 3.5em;
+        font-weight: 400;
+        line-height: 1.0;
+        letter-spacing: -0.025em;
+      }
+
       @media only screen 
       and (min-width: 1000px)  {
 
@@ -130,6 +149,16 @@
 
           .topbuffer {
             margin-top: 120px;
+          }
+
+          .halftext {
+            font-size: 1.5em;
+          }
+
+          .half {
+            flex-basis: 50%;
+            width: 50%;
+            max-width: 500px;
           }
 
       }
@@ -165,6 +194,11 @@
             <p>Contact us &swarr;</br><b>hotswapgame@gmail.com</b></p>
         </div>
       </a>
+
+      <div id="" class="full">
+        <div class="halftext half topbuffer"><a href="mailto:peter.gyory@colorado.edu"><p class=>Peter Gyory</br><b>peter.gyory@colorado.edu</b></p></a></div>
+        <div class="halftext half topbuffer"><a href="mailto:clement.zheng@colorado.edu"><p class=>Clement Zheng</br><b>clement.zheng@colorado.edu</b></p></a></div>
+      </div>
 
       <a href="https://github.com/hotswapgame" target="_blank" class="full topbuffer">
         <div id="" class="strongtext full">
