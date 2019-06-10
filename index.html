@@ -6,7 +6,7 @@
     <meta name="description" content="Digital games with reconfigurable physical controllers">
 	  <meta name="author" content="Peter Gyory; Clement Zheng">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav:300,700&display=swap" rel="stylesheet">
     <style>
       * {
         margin: 0;
@@ -17,14 +17,15 @@
         /*
         background: url('img/bg.png') repeat;
         */
-        background: black;
-        font-family: 'Work sans', sans-serif;
+        background: #b22a3d;
+        font-family: 'Yantramanav', sans-serif;
         font-size: 8px;
         font-weight: 300;
         line-height: 1.1;
         color: white;
         overflow-x: hidden;
         margin-bottom: 200px;
+        margin-left: 5%;
       }
 
       b {
@@ -32,18 +33,26 @@
       }
 
       #container {
-        display: flex;
-        width: 100vw;
-        justify-content: center;
-        flex-basis: 100%;
-        flex-wrap: wrap;
+        position: relative;
+          float: left;
+          padding: 0;
+          margin: 0;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          flex-basis: 100%;
+          flex-wrap: wrap;
+          margin-bottom: 10em;
       }
 
       #bgdiv {
-        position: fixed;
+        position: absolute;
         width: 100vw;
         height: 100vh;
-        background: url('img/bg.png') repeat;
+        background: url('img/bg2.png') no-repeat;
+        background-position: center top;
+        opacity: 0.6;
+        background-size: 100vw;
       }
 
       a {
@@ -54,11 +63,11 @@
       }
 
       a:hover {
-        color: rgb(255, 125, 125);
+        color: black;
       }
 
       a:active {
-        color: rgb(255, 125, 125);
+        color: black;
       }
 
       .full {
@@ -66,7 +75,7 @@
         float: left;
         flex-grow: 0;
         flex-shrink: 0;
-        flex-basis: 90%;
+        flex-basis: 100%;
         flex-wrap: wrap;
         width: 90%;
         max-width: 1000px;
@@ -77,9 +86,9 @@
         float: left;
         flex-grow: 0;
         flex-shrink: 0;
-        flex-basis: 90%;
+        flex-basis: 100%;
         flex-wrap: wrap;
-        width: 90%;
+        width: 60%;
         max-width: 1000px;
       }
 
@@ -88,15 +97,15 @@
       }
 
       #titlediv {
-        margin-top: 100px;
-        font-size: 4.75em;
-        font-weight: 400;
-        line-height: 1.0;
+        margin-top: 45vh;
+        font-size: 3.5em;
+        font-weight: 300;
+        line-height: 1.00;
         letter-spacing: -0.025em;
       }
 
       span.colored {
-        color: rgb(255, 125, 125);
+        color: white;
       }
 
       span.big {
@@ -106,7 +115,7 @@
 
       .videodiv { 
         position: relative; 
-        padding-bottom: 56.25%; 
+        padding-bottom: 25%; 
         height: 0; 
         overflow: hidden; 
         height: auto; 
@@ -123,15 +132,15 @@
       }
 
       .strongtext {
-        font-size: 3.5em;
-        font-weight: 400;
+        font-size: 3.0em;
+        font-weight: 300;
         line-height: 1.0;
         letter-spacing: -0.025em;
       }
 
       .halftext {
-        font-size: 3.5em;
-        font-weight: 400;
+        font-size: 3.0em;
+        font-weight: 300;
         line-height: 1.0;
         letter-spacing: -0.025em;
       }
@@ -141,10 +150,20 @@
 
           body {
               font-size: 20px;
+              margin-left: 0;
+          }
+
+          #bgdiv {
+            background-position: left top;
+            background-size: 60vw;
+          }
+
+          .full {
+            margin-left: 0;
           }
 
           .videodiv { 
-            padding-bottom: 562.5px;
+            padding-bottom: 300px;
           } 
 
           .topbuffer {
@@ -157,7 +176,8 @@
 
           .half {
             flex-basis: 50%;
-            width: 50%;
+            width: 48%;
+            margin: 1%;
             max-width: 500px;
           }
 
@@ -173,48 +193,57 @@
       <div id="bgdiv"></div>
 
       <div id="titlediv" class="full">
-        <p><span class="big">HOT SWAP</span></p>
-        <p>is a series of<br>digital games with<br><span class="colored">reconfigurable physical controllers.</span></p>
+        <p style="margin-bottom: 20px"><img width="60%" src="img/hotswap.png" /></p>
+        <p>is a series of digital games with reconfigurable physical controllers;<br>experimenting with the relationship between players, the game, and the space around them.</p>
       </div>
 
-      <div class="videodiv full topbuffer">
-          <iframe src="https://player.vimeo.com/video/303835908" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      </div>
-
-      <div class="videodiv full topbuffer">
-        <iframe src="https://player.vimeo.com/video/326646426" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      </div>
+      <a href="https://www.indiecade.com/e3-2019/" target="_blank" class="full topbuffer">
+        <div id="" class="strongtext full">
+          <p><b>&searr; IndieCade E3 2019</b>
+          June 11&ndash;13</p>
+          <p style="margin-top: 20px;"><img width="20%" src="img/igs.png"/></p>
+        </div>
+      </a>
 
       <a href="https://www.gdconf.com/alt.ctrl.gdc" target="_blank" class="full topbuffer">
         <div id="" class="strongtext full">
-            <p>March 18&ndash;22</p>
-          <p><b>alt.ctrl.GDC 2019 &swarr;</b></p>
-          <p>Expo Hall Booth N2603</p>
+          <p><b>&searr; alt.ctrl.GDC 2019</b>
+          Winner</p>
         </div>
       </a>
 
       <a href="mailto:hotswapgame@gmail.com" target="_blank" class="full topbuffer">
         <div id="" class="strongtext full">
-            <p>Contact us &swarr;</br><b>hotswapgame@gmail.com</b></p>
+            <p>&searr; Contact us <b>hotswapgame@gmail.com</b></p>
         </div>
       </a>
 
-      <div id="" class="full">
-        <div class="halftext half topbuffer"><a href="mailto:peter.gyory@colorado.edu"><p class=>Peter Gyory</br><b>peter.gyory@colorado.edu</b></p></a></div>
-        <div class="halftext half topbuffer"><a href="mailto:clement.zheng@colorado.edu"><p class=>Clement Zheng</br><b>clement.zheng@colorado.edu</b></p></a></div>
-      </div>
-
       <a href="https://github.com/hotswapgame" target="_blank" class="full topbuffer">
         <div id="" class="strongtext full">
-            <p><b>HOT SWAP</b> project repo &swarr;</p>
+            <p><b>&searr; HOT SWAP</b> project repo</p>
         </div>
       </a>
 
       <a href="https://tinyurl.com/mechamagnets" target="_blank" class="full topbuffer">
         <div id="" class="strongtext full">
-            <p><b>Mechamagnets</b> repo &swarr;</p>
+            <p><b>&searr; Mechamagnets</b> repo</p>
         </div>
       </a>
+
+      <div class="full topbuffer">
+        <div class="videodiv half topbuffer">
+            <iframe src="https://player.vimeo.com/video/303835908" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+  
+        <div class="videodiv half topbuffer">
+          <iframe src="https://player.vimeo.com/video/326646426" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div id="" class="full topbuffer">
+          <div class="halftext half topbuffer"><a href="mailto:peter.gyory@colorado.edu"><p class=>Peter Gyory</br><b>peter.gyory@colorado.edu</b></p></a></div>
+          <div class="halftext half topbuffer"><a href="mailto:clement.zheng@colorado.edu"><p class=>Clement Zheng</br><b>clement.zheng@colorado.edu</b></p></a></div>
+        </div>
 
     </div>
   </body>
